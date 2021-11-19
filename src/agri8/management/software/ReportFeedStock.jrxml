@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="85ea5674-1e42-411f-8a7f-9cf44ace887b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT `tbl_inventory_feedstock`.`f_pid`,
+    `tbl_inventory_feedstock`.`f_pname`,
+    `tbl_inventory_feedstock`.`f_ptype`,
+    `tbl_inventory_feedstock`.`f_psubtotal`,
+    `tbl_inventory_feedstock`.`f_pvat`,
+    `tbl_inventory_feedstock`.`f_ptotal`,
+    `tbl_inventory_feedstock`.`f_pqty`,
+    `tbl_inventory_feedstock`.`f_costper`,
+    `tbl_inventory_feedstock`.`f_pdatein`,
+    `tbl_inventory_feedstock`.`f_pdateout`,
+    `tbl_inventory_feedstock`.`f_pnotes`
+FROM `agri8_database`.`tbl_inventory_feedstock`;]]>
+	</queryString>
+	<field name="f_pid" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_pname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_ptype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_psubtotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_pvat" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_ptotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_pqty" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_costper" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_pdatein" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_pdateout" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="SUB-TOTAL" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{f_psubtotal}]]></variableExpression>
+	</variable>
+	<variable name="VAT" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{f_pvat}]]></variableExpression>
+	</variable>
+	<variable name="TOTAL" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{f_ptotal}]]></variableExpression>
+	</variable>
+	<variable name="QTY" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{f_pqty}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="65" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="40" height="47" uuid="a87d378e-0b0a-49da-948a-5d7f3550f551"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="130" y="0" width="567" height="55" uuid="4052550b-6090-4701-85a6-957d8b4dac07"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Adobe Heiti Std R" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INVENTORY - ANIMAL HEALTH PRODUCTS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="762" y="0" width="40" height="47" uuid="d9a51d9f-c0d8-4dbe-8820-721b8e474bbf"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="61" height="20" uuid="93a3c41a-eddd-40af-82f2-e0d635b86206"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="0" width="156" height="20" uuid="679d8ba4-3d7e-429a-9f29-d23a69b177ad"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="0" width="55" height="20" uuid="f3473509-87d4-4c19-a0e3-06058e46e61b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="610" y="0" width="59" height="33" uuid="883265d4-63ae-400f-9f41-2b6711332508"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cost per Kg / Lt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="669" y="0" width="63" height="20" uuid="520e53c1-5fb9-415c-a8cd-34ca667770c5"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date Bought]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="744" y="0" width="58" height="20" uuid="b60f15d3-2ae2-4206-aa89-aa0bf45edc6d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date Expire]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="0" width="79" height="20" uuid="435a8a60-84c4-47be-9da6-e9f4c7379f8c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="0" width="96" height="20" uuid="c9c44f8a-89da-45f4-b119-986e7a5e64b7"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="0" width="78" height="20" uuid="4d484ddd-627e-4b7f-b203-4bdcea8791f4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sub-Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="564" y="0" width="36" height="20" uuid="73aefd1b-b5b2-4648-8a8c-4e580c6bdb46"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="61" height="20" uuid="d24c6f98-9be8-4a7e-a347-4c1b43934ffd"/>
+				<textFieldExpression><![CDATA[$F{f_pid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="61" y="0" width="156" height="20" uuid="44734098-360d-4015-b9c2-ed6868ecd9e2"/>
+				<textFieldExpression><![CDATA[$F{f_pname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="217" y="0" width="96" height="20" uuid="a32db668-ae7d-46ee-a60d-75a8a274de02"/>
+				<textFieldExpression><![CDATA[$F{f_ptype}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="313" y="0" width="78" height="20" uuid="97e8ca15-08e7-4af0-bf36-8561057f77c7"/>
+				<textFieldExpression><![CDATA[$F{f_psubtotal}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="402" y="0" width="55" height="20" uuid="6ae58a71-f423-4aae-abd9-06afdd8cc68d"/>
+				<textFieldExpression><![CDATA[$F{f_pvat}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="470" y="0" width="79" height="20" uuid="6f2f4a92-a805-445f-b34e-72d3a3243840"/>
+				<textFieldExpression><![CDATA[$F{f_ptotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="564" y="0" width="36" height="20" uuid="d1788ee6-6c9f-443b-8603-f96d13727065"/>
+				<textFieldExpression><![CDATA[$F{f_pqty}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="610" y="0" width="59" height="20" uuid="f34c400b-ee2e-497f-a4a4-2042513f0eac"/>
+				<textFieldExpression><![CDATA[$F{f_costper}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="669" y="0" width="63" height="20" uuid="50e8434a-6ede-4eba-9dfd-9b0edfdb9f98"/>
+				<textFieldExpression><![CDATA[$F{f_pdatein}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="744" y="0" width="58" height="20" uuid="78bb70d3-4a1b-427a-bb60-ee1787333963"/>
+				<textFieldExpression><![CDATA[$F{f_pdateout}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="52" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="697" y="34" width="100" height="20" uuid="e519582a-30d7-4608-ab7f-cb0231d91982"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="34" width="80" height="20" uuid="860682ea-05f5-44f5-bd22-106ae5bb846e"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="417" y="34" width="40" height="20" uuid="c42b9f4d-cb58-4bac-8783-5bd0559312ee"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="61" height="20" uuid="ced61ffc-9ae1-47e1-b14c-a8b727a71126"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="470" y="0" width="79" height="20" uuid="f020bc00-d2c7-4063-9342-40b5aa25de92"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{f_ptotal}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="402" y="0" width="55" height="20" uuid="10668be0-da68-43eb-9518-ecaf1ab4233d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{VAT}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="313" y="0" width="78" height="20" uuid="64b43a36-8633-4552-9e40-a0a2e4b6d288"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SUB-TOTAL}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="564" y="0" width="36" height="20" uuid="b6b6e45d-4ba9-47c7-a7e7-b7661270e409"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{QTY}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9f0ee943-b634-48f4-8b80-36bbc27ab8bc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT `tbl_mating_groups`.`m_tag_id`,
+    `tbl_mating_groups`.`m_name`,
+    `tbl_mating_groups`.`m_herdgroup`,
+    `tbl_mating_groups`.`m_paddock`,
+    `tbl_mating_groups`.`m_stud`,
+    `tbl_mating_groups`.`m_sire`,
+    `tbl_mating_groups`.`m_method`,
+    `tbl_mating_groups`.`m_bullsin`,
+    `tbl_mating_groups`.`m_bullsout`,
+    `tbl_mating_groups`.`m_c_start`,
+    `tbl_mating_groups`.`m_c_ends`,
+    `tbl_mating_groups`.`m_nextmating`,
+    `tbl_mating_groups`.`m_weaningdate`
+FROM `agri8_database`.`tbl_mating_groups`;]]>
+	</queryString>
+	<field name="m_tag_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_herdgroup" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_stud" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_sire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_method" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_bullsin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_bullsout" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_c_start" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m_nextmating" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="78" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="40" height="47" uuid="c05ae9ab-e15e-41f5-9bf2-25a8787892b5"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="164" y="0" width="495" height="60" uuid="d2801226-4bcf-4745-b1fe-43fbe5cbf7b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Adobe Heiti Std R" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MATING HERD RECORDS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="762" y="0" width="40" height="47" uuid="eab335c4-d297-4991-bc30-3e985854b440"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="58" height="20" uuid="db1633e2-5f68-4537-89d6-d4d5d5a9a860"/>
+				<text><![CDATA[Tag ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="0" width="70" height="20" uuid="bb5abdee-7a72-4626-9214-16f44d116cb2"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="128" height="20" uuid="5ae307c1-4ff8-4fc1-bfb3-84c88b1c5a82"/>
+				<text><![CDATA[Herd Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="73" height="20" uuid="643e956a-6f68-4210-9c1f-ad8b60333d64"/>
+				<text><![CDATA[S / C]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="0" width="64" height="20" uuid="6e77c6cc-feec-4258-b194-ee69f097d77f"/>
+				<text><![CDATA[Sire ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="413" y="0" width="58" height="20" uuid="6e53a43c-a301-48e6-8a5b-17a60498ea9c"/>
+				<text><![CDATA[Method]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="0" width="81" height="20" uuid="7d057618-c055-4d8d-9163-9c62884ce3b8"/>
+				<text><![CDATA[Bulls - In]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="552" y="0" width="80" height="20" uuid="296d9dce-7149-4a1c-a10f-93cf1dcfe56c"/>
+				<text><![CDATA[Bulls - Out]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="632" y="0" width="88" height="20" uuid="e7895d6e-604e-44e9-bfe3-5730b59ab688"/>
+				<text><![CDATA[Calving Start]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="720" y="0" width="80" height="20" uuid="2a59784c-5398-4913-ba04-5e65744bf3fe"/>
+				<text><![CDATA[Next Mating]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="215" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="58" height="20" uuid="8b76ff58-6fd1-4686-9abb-78fa0f1fe82e"/>
+				<textFieldExpression><![CDATA[$F{m_tag_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="68" y="0" width="70" height="20" uuid="903af19d-4129-49ed-b300-42e4bfb5b1a8"/>
+				<textFieldExpression><![CDATA[$F{m_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="128" height="20" uuid="23248a1b-88d7-4487-94de-5bfa9592b1cb"/>
+				<textFieldExpression><![CDATA[$F{m_herdgroup}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="73" height="20" uuid="9432cda4-796a-4a99-a69e-4a28c95f923d"/>
+				<textFieldExpression><![CDATA[$F{m_stud}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="349" y="0" width="64" height="20" uuid="3b8cb29d-45ee-45e0-9d42-4d917b042608"/>
+				<textFieldExpression><![CDATA[$F{m_sire}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="0" width="58" height="20" uuid="64ce3b8f-9c17-4f5b-b123-f0363adad4a5"/>
+				<textFieldExpression><![CDATA[$F{m_method}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="471" y="0" width="81" height="20" uuid="415b0388-5b8e-4462-a413-d1f90d8c71e4"/>
+				<textFieldExpression><![CDATA[$F{m_bullsin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="552" y="0" width="80" height="20" uuid="71ec91a0-02c6-42c6-8ecb-03ddfcfbd990"/>
+				<textFieldExpression><![CDATA[$F{m_bullsout}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="632" y="0" width="88" height="20" uuid="d4091e27-3fab-46b6-99e7-a0e860cc7ec3"/>
+				<textFieldExpression><![CDATA[$F{m_c_start}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="720" y="0" width="80" height="20" uuid="882c3aad-1be1-4dfd-9526-616968eb6f97"/>
+				<textFieldExpression><![CDATA[$F{m_nextmating}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="65" splitType="Stretch">
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="702" y="2" width="100" height="20" uuid="1e76e825-71bf-4c08-8a95-1245f7084a74"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="2" width="100" height="20" uuid="cc91e927-c01c-4975-8b4b-254e3b38a90d"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="45" width="802" height="20" uuid="4cffb6fe-b7f1-479e-bf79-f5164cb1427c"/>
+				<textElement textAlignment="Center">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[AGRI8 MANAGEMENT SOFTWARE - "Here, to increase your farm productions."]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="349" y="2" width="80" height="20" uuid="9c54cd43-b0a7-4dc1-9f0e-54bc4d0780e9"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="429" y="2" width="40" height="20" uuid="d7b306f1-2a1e-4304-bd8d-10f1fc11e9af"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="21" splitType="Stretch"/>
+	</summary>
+</jasperReport>

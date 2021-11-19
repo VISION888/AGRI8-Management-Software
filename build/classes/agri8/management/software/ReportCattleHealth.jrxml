@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="15bb4f22-9184-4305-b389-7303dddf6fe7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `tbl_vacc_disease`.`id_vacc`,
+    `tbl_vacc_disease`.`v_id`,
+    `tbl_vacc_disease`.`v_name`,
+    `tbl_vacc_disease`.`v_dob`,
+    `tbl_vacc_disease`.`v_disease`,
+    `tbl_vacc_disease`.`v_vacc`,
+    `tbl_vacc_disease`.`v_app`,
+    `tbl_vacc_disease`.`v_dosage`,
+    `tbl_vacc_disease`.`v_treatementDate`,
+    `tbl_vacc_disease`.`v_nexttreatment`,
+    `tbl_vacc_disease`.`v_employee`,
+    `tbl_vacc_disease`.`v_note`
+FROM `agri8_database`.`tbl_vacc_disease`;]]>
+	</queryString>
+	<field name="id_vacc" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v_dob" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v_disease" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v_vacc" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v_app" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v_dosage" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v_treatementDate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v_nexttreatment" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="179" y="0" width="495" height="60" uuid="43766e34-187f-4b61-acf9-abebd351237d"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Adobe Heiti Std R" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ANIMAL HEALTH RECORDS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="762" y="0" width="40" height="47" uuid="79d74288-8624-429c-baca-04ef3d15530c"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="40" height="47" uuid="8c42173b-4594-4e17-9a36-74f7618f73f8"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="1" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="21" height="20" uuid="09812595-84ac-47a8-93ac-dfb36c4e2367"/>
+				<text><![CDATA[Nr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="0" width="60" height="20" uuid="f0b0dec9-e6c8-435d-aeea-56b95b31dfd0"/>
+				<text><![CDATA[Tag ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="0" width="169" height="20" uuid="964c0742-9d76-404b-89d9-ee9b39f67d12"/>
+				<text><![CDATA[Disease]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="495" y="0" width="67" height="20" uuid="b4aa815b-9339-46ca-9901-903703b796fb"/>
+				<text><![CDATA[Application]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="573" y="0" width="47" height="20" uuid="cbe3d409-4fdf-4801-9e78-3215b0efad98"/>
+				<text><![CDATA[Dosage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="722" y="0" width="80" height="20" uuid="8817cba6-6bc1-40a6-b4f9-6f0ae2175205"/>
+				<text><![CDATA[Next Treatment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="91" y="0" width="80" height="20" uuid="533e1074-cec9-4566-b844-6f06254c2e0e"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="171" y="0" width="54" height="20" uuid="62614a08-b249-4279-b31a-c6daed75cc69"/>
+				<text><![CDATA[D.O.B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="67" height="20" uuid="810bec1f-7e55-426e-a5b1-ae632173cbd4"/>
+				<text><![CDATA[Vaccination]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="632" y="0" width="80" height="20" uuid="4f3648f9-eb98-40d8-8925-2334ccd41755"/>
+				<text><![CDATA[Treatment Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="21" y="0" width="60" height="20" uuid="7b40318b-be62-4203-81a4-830672cf6be1"/>
+				<textFieldExpression><![CDATA[$F{v_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="91" y="0" width="80" height="20" uuid="2683654a-e939-411f-9f4b-712b357594a3"/>
+				<textFieldExpression><![CDATA[$F{v_name}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="171" y="0" width="54" height="20" uuid="9352172d-45b9-4afb-9ace-7a06ba57e952"/>
+				<textFieldExpression><![CDATA[$F{v_dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="0" width="169" height="20" uuid="20cf359e-1b0e-49cb-86c3-e6166184ce3a"/>
+				<textFieldExpression><![CDATA[$F{v_disease}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="67" height="20" uuid="119e3bee-2995-45bf-89fb-7463b5d65e72"/>
+				<textFieldExpression><![CDATA[$F{v_vacc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="495" y="0" width="67" height="20" uuid="afce3bb1-f874-48f3-b867-1e5e51c51ac6"/>
+				<textFieldExpression><![CDATA[$F{v_app}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="573" y="0" width="47" height="20" uuid="05b45dc1-aa3e-43ea-b651-8e16a094391b"/>
+				<textFieldExpression><![CDATA[$F{v_dosage}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="632" y="0" width="80" height="20" uuid="3f0e0b2a-3916-4e6c-b4fc-5791817fb3cc"/>
+				<textFieldExpression><![CDATA[$F{v_treatementDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="722" y="0" width="80" height="20" uuid="e4956ecc-9c31-4173-abcd-99e189f927eb"/>
+				<textFieldExpression><![CDATA[$F{v_nexttreatment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="21" height="20" uuid="6366a6fa-f92d-44c3-a0c9-22da83646aa3"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="34" width="800" height="20" uuid="84fdc2c2-ede3-4b85-b00a-54af34826796"/>
+				<textElement textAlignment="Center">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[AGRI8 MANAGEMENT SOFTWARE - "Here, to increase your farm productions."]]></text>
+			</staticText>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="702" y="0" width="100" height="20" uuid="ddfe1eb6-4d30-41b8-8070-ec1249c667fd"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="427" y="0" width="40" height="20" uuid="1f6c67f7-1768-4d04-9af8-64429da2b862"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="0" width="80" height="20" uuid="a1ea85f7-86ef-40e2-a2e9-7735e98087c8"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="0" width="100" height="20" uuid="c72df1a1-00e7-41c7-9ba4-e89947dfef3c"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

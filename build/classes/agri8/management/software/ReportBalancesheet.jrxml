@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1f2c6a96-5030-4833-8d3f-3485c71198c4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="bsid" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT `tbl_bs_report`.`bsid`,
+    `tbl_bs_report`.`one3`,
+    `tbl_bs_report`.`two3`,
+    `tbl_bs_report`.`three3`,
+    `tbl_bs_report`.`four3`,
+    `tbl_bs_report`.`g`,
+    `tbl_bs_report`.`l`,
+    `tbl_bs_report`.`p`,
+    `tbl_bs_report`.`hh`,
+    `tbl_bs_report`.`ll`,
+    `tbl_bs_report`.`pp`,
+    `tbl_bs_report`.`datestart`,
+    `tbl_bs_report`.`dateend`
+FROM `agri8_database`.`tbl_bs_report` WHERE `tbl_bs_report`.`bsid` = $P{bsid};]]>
+	</queryString>
+	<field name="bsid" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="one3" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="two3" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="three3" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="four3" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="g" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="p" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hh" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ll" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pp" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="datestart" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dateend" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="132" y="2" width="567" height="55" uuid="0c2541fb-4d01-4aa5-9303-147daf5b3f2d"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Adobe Heiti Std R" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[YEARL BALANCSHEET]]></text>
+			</staticText>
+			<image>
+				<reportElement x="762" y="2" width="40" height="47" uuid="f5d10faa-3f52-4601-abaa-63683231b67f"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="40" height="47" uuid="6f2f41f3-1495-4a45-9dea-176f7fea73e5"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="192" splitType="Stretch">
+			<staticText>
+				<reportElement x="320" y="0" width="120" height="20" uuid="c8a5cfb8-9446-4fe3-b996-2ee03f3fbbe5"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BALANCESHEET ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="440" y="0" width="100" height="20" uuid="ea23bc8d-d2ca-4fe2-80f3-1fa3809adb5f"/>
+				<textFieldExpression><![CDATA[$F{bsid}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="20" uuid="37786efd-35da-4f9a-8258-b989664cfbab"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATE START]]></text>
+			</staticText>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="80" y="0" width="120" height="20" uuid="307c02ff-3f2c-43c8-a830-39900217534a"/>
+				<textFieldExpression><![CDATA[$F{datestart}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="640" y="0" width="80" height="20" uuid="9d95d436-0892-4489-8370-140f16afe12e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATE ENDS]]></text>
+			</staticText>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="720" y="0" width="82" height="20" uuid="32eacc6a-c631-417e-be2e-b808c368e4f4"/>
+				<textFieldExpression><![CDATA[$F{dateend}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="51" y="60" width="152" height="20" uuid="04bb7833-e5be-4cb3-8af3-f54899739f0d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL LIABILITIES:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="230" y="60" width="130" height="20" uuid="3a320639-c422-422b-9949-f3ff93b2ba6a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{one3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="51" y="101" width="152" height="20" uuid="7a540882-caaf-4a0e-b25f-e28bdff5f7b3"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INCOME NET WORTH:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="140" width="152" height="20" uuid="cc000e0c-2123-491e-9356-bba495bd6b2c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="230" y="101" width="130" height="20" uuid="b405a909-bdde-4df5-a158-9b64f65e1674"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{two3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="472" y="60" width="120" height="20" uuid="1304499b-a3ce-47d1-b745-6a6277600540"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL ASSETS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="230" y="140" width="130" height="20" uuid="26b8e9bd-8f96-4116-b9a7-8efaa2df9347"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{three3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="592" y="60" width="110" height="20" uuid="098ccb7b-9350-430f-a1ee-9fe267bca113"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{four3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="110" height="33" uuid="96319e9b-4d80-4875-8838-5801a527ccbf"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL CURRENT LIABILITIES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="0" width="103" height="33" uuid="abfc9361-9aa9-457a-b377-90e787fd11a0"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL MEDIUM LIABILITES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="100" height="33" uuid="a5c29f0a-dcdf-486a-ba7a-7ef27c61a514"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL LONG LIABILITIES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="0" width="100" height="33" uuid="8d90d279-e7ed-4ed8-9d1e-7a59fe1af3a9"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL CURRENT ASSETS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="0" width="113" height="33" uuid="55841f7d-3a38-4773-a798-bf9b9ecd5dda"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL MEDIUM TERM ASSETS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="679" y="0" width="107" height="20" uuid="64d30d61-7e5b-439b-be9c-b9fe10588e91"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FIXED ASSETS]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="11" y="0" width="99" height="20" uuid="233ef5f8-19e9-4ee7-93ad-d7f699997b04"/>
+				<textFieldExpression><![CDATA[$F{g}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="165" y="0" width="90" height="20" uuid="64c53d03-f578-484a-9419-b1b33b423616"/>
+				<textFieldExpression><![CDATA[$F{l}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="290" y="0" width="90" height="20" uuid="dca9004e-604b-430b-beb1-8791be1773a6"/>
+				<textFieldExpression><![CDATA[$F{p}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="421" y="0" width="89" height="20" uuid="2526051b-4bc0-4c6e-84c2-a6a38225d915"/>
+				<textFieldExpression><![CDATA[$F{hh}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="551" y="0" width="102" height="20" uuid="08114dea-9008-45fe-8d3d-f42ca319c782"/>
+				<textFieldExpression><![CDATA[$F{ll}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="689" y="0" width="97" height="20" uuid="f57c0939-d32f-4fa1-bf31-8d2ccd59060c"/>
+				<textFieldExpression><![CDATA[$F{pp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="699" y="34" width="100" height="20" uuid="17947ac1-d46e-46f9-b842-3a5720ac3c8d"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="34" width="80" height="20" uuid="fb7d3260-0ea8-41c6-ab59-ab1b77711ff1"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="80" y="34" width="40" height="20" uuid="1587c0dc-f1d6-4bc8-a7a8-01582f0f0324"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

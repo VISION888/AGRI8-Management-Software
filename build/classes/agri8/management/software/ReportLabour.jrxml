@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1fb3e8a3-fef4-4f0e-869f-8360ff88bc79">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT `tbl_labour_info`.`l_id`,
+    `tbl_labour_info`.`l_name`,
+    `tbl_labour_info`.`l_surname`,
+    `tbl_labour_info`.`l_contract`,
+    `tbl_labour_info`.`l_position`,
+    `tbl_labour_info`.`l_normal_hr`,
+    `tbl_labour_info`.`l_total_overtime`,
+    `tbl_labour_info`.`l_total_hr`,
+    `tbl_labour_info`.`l_hourly_rate`,
+    `tbl_labour_info`.`l_less_uif`,
+    `tbl_labour_info`.`l_less_paye`,
+    `tbl_labour_info`.`l_less_deduc`,
+    `tbl_labour_info`.`l_total_salary`
+FROM `agri8_database`.`tbl_labour_info`;]]>
+	</queryString>
+	<field name="l_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_surname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_contract" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_position" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_normal_hr" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_total_overtime" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_total_hr" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_hourly_rate" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_less_uif" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_less_paye" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_less_deduc" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="l_total_salary" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="TOTAL" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{l_total_salary}]]></variableExpression>
+	</variable>
+	<variable name="DEDUCTIONS" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{l_less_deduc}]]></variableExpression>
+	</variable>
+	<variable name="PAYE" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{l_less_paye}]]></variableExpression>
+	</variable>
+	<variable name="UIF" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{l_less_uif}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="129" y="0" width="567" height="55" uuid="3d5c5da6-91cd-46de-bc72-a143aeb9c41c"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Adobe Heiti Std R" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LABOURER INFORMATION LIST]]></text>
+			</staticText>
+			<image>
+				<reportElement x="762" y="0" width="40" height="47" uuid="cc4e77af-fb1a-44f5-8944-85e59491fddf"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="40" height="47" uuid="8b337f1a-efc0-4d98-af26-1583a6739609"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="51" height="20" uuid="29fbc934-7343-42bd-add2-0f6e0b6e96bc"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lab ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="0" width="59" height="20" uuid="e8c89fff-c944-4e1a-98bd-151750e3bce9"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="70" height="20" uuid="16065337-d59f-4eec-97be-130ab5631aa2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Surname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="59" height="20" uuid="36e55103-311b-4a68-97da-54c697d254ec"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contract]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="0" width="59" height="20" uuid="26837bed-676a-4aae-a530-835e387ada07"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Position]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="0" width="61" height="32" uuid="45816b70-0e3b-43cd-adaa-0c173c5cb5c9"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Normal Hrs Worked]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="369" y="0" width="48" height="32" uuid="0d7e58a8-a743-4ecd-aa42-f31ae3dbf2fc"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Overtime workerd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="0" width="50" height="32" uuid="4480640a-0e2e-43a3-9202-e4775d3c4f39"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Hr's]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="477" y="0" width="61" height="32" uuid="8ea57a4d-f636-4d85-aaf6-fc17c4575d34"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hourly Rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="538" y="0" width="45" height="32" uuid="d32fc127-9325-425d-bd63-afa3b41c0a15"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Less UIF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="593" y="0" width="61" height="32" uuid="a968e5c1-6c26-4130-996c-4b0b7e32248b"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Less PAYE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="654" y="0" width="61" height="32" uuid="d82ded6a-5036-42fd-b70c-c200c47e344a"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Less Deductions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="725" y="0" width="77" height="20" uuid="a654f3c9-914c-4765-9b86-82abe96dbe2b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Salary]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="51" height="20" uuid="c4135d37-9f63-48fe-8d42-ec9610868597"/>
+				<textFieldExpression><![CDATA[$F{l_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="51" y="0" width="59" height="20" uuid="ef2bfca5-7352-4a3c-a4ce-90767c8c9753"/>
+				<textFieldExpression><![CDATA[$F{l_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="70" height="20" uuid="d9738206-7ae1-4c4c-b312-c43bb8697dad"/>
+				<textFieldExpression><![CDATA[$F{l_surname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="59" height="20" uuid="aaf83028-49c5-4c2b-9053-e7d79e6567d1"/>
+				<textFieldExpression><![CDATA[$F{l_contract}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="0" width="59" height="20" uuid="96372e72-d58d-4dd1-96b2-957e3a9ae64c"/>
+				<textFieldExpression><![CDATA[$F{l_position}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="0" width="61" height="20" uuid="04219a13-56fb-4527-bf01-0886b970c7cf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{l_normal_hr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="369" y="0" width="48" height="20" uuid="4551147c-25ed-4fb1-8e1d-b1a4b8bb7f63"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{l_total_overtime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="0" width="50" height="20" uuid="ee2fcc04-7c79-4b72-9a74-79948d392fd3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{l_total_hr}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="477" y="0" width="61" height="20" uuid="dc0165f9-1991-437f-b77b-bd830761fbba"/>
+				<textFieldExpression><![CDATA[$F{l_hourly_rate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="538" y="0" width="45" height="20" uuid="557b2afe-f060-4afc-82f3-bfb6ac6baba4"/>
+				<textFieldExpression><![CDATA[$F{l_less_uif}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="593" y="0" width="61" height="20" uuid="a8830d09-9964-423d-9da8-f3b5c27afd7f"/>
+				<textFieldExpression><![CDATA[$F{l_less_paye}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="654" y="0" width="61" height="20" uuid="19575b41-2141-47d4-900b-780ba5dd2d63"/>
+				<textFieldExpression><![CDATA[$F{l_less_deduc}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="725" y="0" width="77" height="20" uuid="9d66a56e-4ded-4668-b8a3-ba706b440e9b"/>
+				<textFieldExpression><![CDATA[$F{l_total_salary}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="702" y="34" width="100" height="20" uuid="34433a5b-b571-4a80-bd9f-66bdad4bef41"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="34" width="80" height="20" uuid="e3529ef0-bd14-412c-98ea-21783c28b3a7"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="80" y="34" width="40" height="20" uuid="503cff30-b73a-43e9-9562-42dfe460a8f6"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="725" y="0" width="77" height="20" uuid="4572a132-ddb3-49cd-b322-a4c67744587f"/>
+				<textFieldExpression><![CDATA[$V{TOTAL}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="664" y="0" width="61" height="20" uuid="2eaeb8e5-d3ec-477b-ba7c-4f33e0345b7c"/>
+				<textFieldExpression><![CDATA[$V{DEDUCTIONS}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="603" y="0" width="61" height="20" uuid="72d5e36e-a5d8-476c-ac3c-675f1c9c5faf"/>
+				<textFieldExpression><![CDATA[$V{PAYE}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="558" y="0" width="45" height="20" uuid="02e7fc97-db38-4918-849a-8823dee7563f"/>
+				<textFieldExpression><![CDATA[$V{UIF}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ab2a5765-13a6-44b9-9584-ea973b180858">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="29"/>
+	<queryString>
+		<![CDATA[SELECT `tbl_calf_info`.`cc_tag_id`,
+    `tbl_calf_info`.`cc_name`,
+    `tbl_calf_info`.`cc_breed`,
+    `tbl_calf_info`.`cc_dob`,
+    `tbl_calf_info`.`cc_studcom`,
+    `tbl_calf_info`.`cc_gender`,
+    `tbl_calf_info`.`cc_birthweight`,
+    `tbl_calf_info`.`cc_paddock`,
+    `tbl_calf_info`.`cc_herdgroup`,
+    `tbl_calf_info`.`cc_weanweight`,
+    `tbl_calf_info`.`cc_weandate`,
+    `tbl_calf_info`.`cc_sireID`,
+    `tbl_calf_info`.`cc_damID`,
+    `tbl_calf_info`.`cc_birthstatues`,
+    `tbl_calf_info`.`cc_healthstatues`,
+    `tbl_calf_info`.`cc_hornstatues`
+FROM `agri8_database`.`tbl_calf_info`;]]>
+	</queryString>
+	<field name="cc_tag_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_breed" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_dob" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_studcom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_birthweight" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_herdgroup" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_weanweight" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_weandate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_sireID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_damID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cc_hornstatues" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="74" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="40" height="47" uuid="23acc00d-7377-44ee-b07b-d3da38084e48"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="762" y="0" width="40" height="47" uuid="ab255d45-8946-4607-89b1-4936d95042ff"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="167" y="0" width="495" height="60" uuid="9bee0e3f-2477-4717-8a69-2e584bf170d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Adobe Heiti Std R" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CALF HERD INFORMATION]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="61" height="20" uuid="6049d224-c430-4370-a7f2-17edf8c88cbc"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tag ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="0" width="61" height="20" uuid="f66bf19b-b78a-4cd5-93d3-42c7bbbe59a4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="0" width="61" height="20" uuid="01ae7a90-fb2f-4ec8-abfd-2a42362a26c8"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Breed]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="0" width="61" height="20" uuid="fdd9708e-9e21-490f-bc41-af29a8877ce6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[D.O.B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="0" width="31" height="20" uuid="6cd95ce1-a7e8-4fa8-9849-e26a402b819b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[S / C]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="0" width="61" height="20" uuid="7981475e-5894-4f49-9f8b-4d5e8fd236c4"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="0" width="29" height="20" uuid="42b1ea53-be00-426b-b771-631a999426e3"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[B.W.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="375" y="0" width="128" height="20" uuid="c503f3c1-6555-4e10-86d2-c17b4387f7c6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Herd Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="0" width="28" height="20" uuid="eefcb98e-07be-4ac1-8d2e-7287d864b640"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[W.W]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="531" y="0" width="61" height="20" uuid="c39ae5b0-4450-4191-b359-f994ef38c33d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[W. Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="602" y="0" width="60" height="20" uuid="114583ca-a979-4b84-94c6-e6a15c06965c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sire ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="662" y="0" width="58" height="20" uuid="f18cc003-47b9-4ab2-bd19-3edab2368aa3"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dam ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="720" y="0" width="82" height="20" uuid="f1f73ba2-0438-4751-b79f-595e9c6f4621"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Horn Statues]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="284" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="61" height="20" uuid="309635c5-7573-4bd6-b00c-5de650447c56"/>
+				<textFieldExpression><![CDATA[$F{cc_tag_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="61" y="0" width="61" height="20" uuid="c5169df1-ff8b-405f-a196-ca41d8f8290d"/>
+				<textFieldExpression><![CDATA[$F{cc_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="0" width="61" height="20" uuid="1a164440-9f25-44d7-95f8-3ba13cd7d080"/>
+				<textFieldExpression><![CDATA[$F{cc_breed}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="183" y="0" width="61" height="20" uuid="64c7e237-8955-4e51-84d7-b9d0b2f32478"/>
+				<textFieldExpression><![CDATA[$F{cc_dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="0" width="31" height="20" uuid="2a19f9ae-3e68-4148-8914-8f90afb073a6"/>
+				<textFieldExpression><![CDATA[$F{cc_studcom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="0" width="61" height="20" uuid="091226bf-dbca-44ff-a625-d3a422de6dfc"/>
+				<textFieldExpression><![CDATA[$F{cc_gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="0" width="29" height="20" uuid="2b61ac89-ede3-4415-b3a9-761325c0f8a1"/>
+				<textFieldExpression><![CDATA[$F{cc_birthweight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="0" width="128" height="20" uuid="e094fe6c-e7da-4e6a-ae0f-1cec0f8de083"/>
+				<textFieldExpression><![CDATA[$F{cc_herdgroup}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="503" y="0" width="28" height="20" uuid="fe96bb1c-11e5-464b-abf1-01d81db3d221"/>
+				<textFieldExpression><![CDATA[$F{cc_weanweight}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="531" y="0" width="61" height="20" uuid="de4a8a2a-e0a2-4c5f-bcf8-342631d56ecf"/>
+				<textFieldExpression><![CDATA[$F{cc_weandate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="602" y="0" width="60" height="20" uuid="e8c2ecc9-dfcc-45da-9926-b5c851596a0c"/>
+				<textFieldExpression><![CDATA[$F{cc_sireID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="662" y="0" width="58" height="20" uuid="ff377ca9-ae72-46e6-861b-3ec4827604c8"/>
+				<textFieldExpression><![CDATA[$F{cc_damID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="720" y="0" width="82" height="20" uuid="ae06f73b-fc67-42ca-ab97-bfabd211cfcc"/>
+				<textFieldExpression><![CDATA[$F{cc_hornstatues}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="67" splitType="Stretch">
+			<textField>
+				<reportElement x="366" y="47" width="100" height="20" uuid="022490b5-c527-4b67-9d91-d42f85de58b4"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="47" width="100" height="20" uuid="b6eb755a-da75-42c3-93b3-1d335334eef7"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="702" y="47" width="100" height="20" uuid="dead1f65-fcbe-4d8f-bcc8-6be6e8b3ccd1"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="22" width="802" height="20" uuid="c1aff43a-7863-452e-8281-a782da6b83ec"/>
+				<textElement textAlignment="Center">
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[AGRI8 MANAGEMENT SOFTWARE - "Here, to increase your farm productions."]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

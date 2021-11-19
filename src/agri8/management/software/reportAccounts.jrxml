@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9278cbc3-8819-47d3-8bd7-d3d6b4147f52">
+	<parameter name="a_id" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT `tbl_account_report`.`a_id`,
+    `tbl_account_report`.`t31`,
+    `tbl_account_report`.`q31`,
+    `tbl_account_report`.`d`,
+    `tbl_account_report`.`t15`,
+    `tbl_account_report`.`q15`,
+    `tbl_account_report`.`dateopen`,
+    `tbl_account_report`.`dateclose`,
+    `tbl_account_report`.`v`,
+    `tbl_account_report`.`v1`,
+    `tbl_account_report`.`v2`,
+    `tbl_account_report`.`v3`,
+    `tbl_account_report`.`v4`,
+    `tbl_account_report`.`v5`,
+    `tbl_account_report`.`v6`,
+    `tbl_account_report`.`v7`,
+    `tbl_account_report`.`v8`,
+    `tbl_account_report`.`v9`,
+    `tbl_account_report`.`v10`,
+    `tbl_account_report`.`v11`,
+    `tbl_account_report`.`v12`,
+    `tbl_account_report`.`v13`,
+    `tbl_account_report`.`v14`,
+    `tbl_account_report`.`v16`,
+    `tbl_account_report`.`v17`,
+    `tbl_account_report`.`v18`,
+    `tbl_account_report`.`v19`,
+    `tbl_account_report`.`v20`,
+    `tbl_account_report`.`v21`,
+    `tbl_account_report`.`v22`,
+    `tbl_account_report`.`v23`,
+    `tbl_account_report`.`v24`,
+    `tbl_account_report`.`v25`,
+    `tbl_account_report`.`v26`,
+    `tbl_account_report`.`v27`,
+    `tbl_account_report`.`v28`,
+    `tbl_account_report`.`v29`,
+    `tbl_account_report`.`v30`,
+    `tbl_account_report`.`q`,
+    `tbl_account_report`.`q1`,
+    `tbl_account_report`.`q2`,
+    `tbl_account_report`.`q3`,
+    `tbl_account_report`.`q4`,
+    `tbl_account_report`.`q5`,
+    `tbl_account_report`.`q6`,
+    `tbl_account_report`.`q7`,
+    `tbl_account_report`.`q8`,
+    `tbl_account_report`.`q9`,
+    `tbl_account_report`.`q10`,
+    `tbl_account_report`.`q11`,
+    `tbl_account_report`.`q12`,
+    `tbl_account_report`.`q13`,
+    `tbl_account_report`.`q14`,
+    `tbl_account_report`.`q16`,
+    `tbl_account_report`.`q17`,
+    `tbl_account_report`.`q18`,
+    `tbl_account_report`.`q19`,
+    `tbl_account_report`.`q20`,
+    `tbl_account_report`.`q21`,
+    `tbl_account_report`.`q22`,
+    `tbl_account_report`.`q23`,
+    `tbl_account_report`.`q24`,
+    `tbl_account_report`.`q25`,
+    `tbl_account_report`.`q26`,
+    `tbl_account_report`.`q27`,
+    `tbl_account_report`.`q28`,
+    `tbl_account_report`.`q29`,
+    `tbl_account_report`.`q30`,
+    `tbl_account_report`.`t`,
+    `tbl_account_report`.`t1`,
+    `tbl_account_report`.`t2`,
+    `tbl_account_report`.`t3`,
+    `tbl_account_report`.`t4`,
+    `tbl_account_report`.`t5`,
+    `tbl_account_report`.`t6`,
+    `tbl_account_report`.`t7`,
+    `tbl_account_report`.`t8`,
+    `tbl_account_report`.`t9`,
+    `tbl_account_report`.`t10`,
+    `tbl_account_report`.`t11`,
+    `tbl_account_report`.`t12`,
+    `tbl_account_report`.`t13`,
+    `tbl_account_report`.`t14`,
+    `tbl_account_report`.`t16`,
+    `tbl_account_report`.`t17`,
+    `tbl_account_report`.`t18`,
+    `tbl_account_report`.`t19`,
+    `tbl_account_report`.`t20`,
+    `tbl_account_report`.`t21`,
+    `tbl_account_report`.`t22`,
+    `tbl_account_report`.`t23`,
+    `tbl_account_report`.`t24`,
+    `tbl_account_report`.`t25`,
+    `tbl_account_report`.`t26`,
+    `tbl_account_report`.`t27`,
+    `tbl_account_report`.`t28`,
+    `tbl_account_report`.`t29`,
+    `tbl_account_report`.`t30`
+FROM `agri8_database`.`tbl_account_report` WHERE `tbl_account_report`.`a_id` = $P{a_id}]]>
+	</queryString>
+	<field name="a_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t31" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q31" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="d" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t15" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q15" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dateopen" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dateclose" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v1" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v2" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v3" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v4" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v5" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v6" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v7" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v8" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v9" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v10" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v11" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v12" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v13" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v14" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v16" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v17" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v18" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v19" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v20" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v21" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v22" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v23" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v24" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v25" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v26" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v27" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v28" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v29" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="v30" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q7" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q8" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q9" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q10" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q11" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q12" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q13" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q14" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q16" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q17" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q18" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q19" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q20" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q21" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q22" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q23" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q24" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q25" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q26" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q27" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q28" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q29" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="q30" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t1" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t2" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t3" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t4" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t5" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t6" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t7" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t8" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t9" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t10" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t11" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t12" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t13" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t14" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t16" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t17" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t18" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t19" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t20" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t21" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t22" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t23" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t24" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t25" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t26" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t27" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t28" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t29" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t30" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="134" y="0" width="567" height="55" uuid="b0bf10a8-40f1-4fe3-abe0-f86b5d13a15f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Adobe Heiti Std R" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[YEARL TRADING ACCOUNT DIFFERENCE]]></text>
+			</staticText>
+			<image>
+				<reportElement x="762" y="0" width="40" height="47" uuid="17d55aa2-e306-4dfa-9e4a-7719231b4faa"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="40" height="47" uuid="5d11a04c-11a1-4c13-bb4d-1c1147dbf38f"/>
+				<imageExpression><![CDATA["C:\\Users\\Conquela\\Desktop\\AGRI8 Project Management\\AGRI8 Management Software\\AGRI8 Management Software\\src\\agri8\\management\\software\\LogoIcon.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="86" splitType="Stretch">
+			<staticText>
+				<reportElement x="260" y="0" width="122" height="34" uuid="37c10f8d-ee51-4d39-9a17-bcfc87304878"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACCOUNTS ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="382" y="0" width="132" height="34" uuid="c329e4f4-8c8f-48b8-a4e3-d8cedb05af75"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{a_id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="56" width="100" height="20" uuid="a43265c9-cbdc-40ae-9218-867906b5e6ac"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Opening Date]]></text>
+			</staticText>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="100" y="56" width="100" height="20" uuid="ae706a30-6b4d-4a2d-9368-9955c47e4a00"/>
+				<textFieldExpression><![CDATA[$F{dateopen}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="600" y="56" width="100" height="20" uuid="cb28f523-bf78-4ca0-bfeb-e7b14f620664"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Closing Date]]></text>
+			</staticText>
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="700" y="56" width="100" height="20" uuid="2fd8cb77-fa41-4df8-b3b3-2b87d2ffb21d"/>
+				<textFieldExpression><![CDATA[$F{dateclose}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="66e6a484-51a8-4548-a31b-7b86fbec9324"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Opening Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="0" width="100" height="20" uuid="578f9660-e68f-42db-bb72-3ce400f82603"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Opening Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="0" width="100" height="20" uuid="956e7a6a-088c-4bd4-b779-afce71fe097c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Difference]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="0" width="100" height="20" uuid="17ba3726-db74-4108-a304-6922b7c82d00"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Closing Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="100" height="20" uuid="d01d45a5-67b6-4c3b-b0ea-e6b4cd243f5e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Closing Quantity]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="53f37eec-4c7c-450c-bcfa-3a5b728cfda9"/>
+				<textFieldExpression><![CDATA[$F{t31}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="100" height="20" uuid="2d70f50b-820d-4b94-869d-bf84b5d6b14a"/>
+				<textFieldExpression><![CDATA[$F{q31}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="700" y="0" width="100" height="20" uuid="eef5e428-9bfc-4c7d-9501-811a31e8e859"/>
+				<textFieldExpression><![CDATA[$F{d}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="322" y="0" width="100" height="20" uuid="1dce7e39-ee61-4672-a289-bb2f413f555b"/>
+				<textFieldExpression><![CDATA[$F{t15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="100" height="20" uuid="ba83b58e-b67e-4871-acba-a715175a61cb"/>
+				<textFieldExpression><![CDATA[$F{q15}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField pattern="yyyy/MM/dd">
+				<reportElement x="702" y="34" width="100" height="20" uuid="87616912-32ca-446f-875a-1a66ee92b0a2"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="34" width="80" height="20" uuid="0c4bc0bc-9f2f-4dc7-be71-f13ddb8f0c8a"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="80" y="34" width="40" height="20" uuid="f55df788-42e9-4fd1-b2ba-6b1b363989dd"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
