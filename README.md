@@ -8,3 +8,6 @@ This project was create as part of an IT Presentation as final year for my B.S.C
 Please note login details can be used by going to the Authorization menu on the Home Page of the project.
 Please enjoy. This was just the first phase of the project so any bugs found and feedback would be appreciated. email: vision8m@gmail.com
 Other then that, enjoy my software. AGRI8 MANAGEMENT SOFTWARE. Here, to increase your companies production time. 
+Build with Java netbeans
+JDK 11.0 Stable version
+mySQL Workbench
