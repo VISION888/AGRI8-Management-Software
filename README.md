@@ -11,3 +11,4 @@ Other then that, enjoy my software. AGRI8 MANAGEMENT SOFTWARE. Here, to increase
 Build with Java netbeans
 JDK 11.0 Stable version
 mySQL Workbench
+Pictures used in this project remain the solo rights of the developers. They are only used for demostration purposes. 
